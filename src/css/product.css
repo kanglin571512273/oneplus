@@ -2,53 +2,179 @@
 .container-infinite {
   background: #f6f6f6;
 }
-.container-infinite > .container-text {
+.container-infinite > .container-texts {
   width: 1200px;
   height: 869px;
   margin: 0 auto;
   padding: 20px 0 60px;
   display: flex;
 }
-.container-infinite > .container-text > .left-part {
+.container-infinite > .container-texts > .left-part {
   width: 600px;
 }
-.container-infinite > .container-text > .left-part .placeholder {
-  width: 600px;
-  height: 600px;
-}
-.container-infinite > .container-text > .left-part .placeholder > img {
+.container-infinite > .container-texts > .left-part .placeholder {
   width: 600px;
   height: 600px;
 }
-.container-infinite > .container-text > .left-part .hide-scrollbar2 {
+.container-infinite > .container-texts > .left-part .placeholder > img {
+  width: 600px;
+  height: 600px;
+}
+.container-infinite > .container-texts > .left-part .hide-scrollbar2 {
   width: 600px;
   height: 103px;
   display: flex;
   margin-left: 140px;
 }
-.container-infinite > .container-text > .left-part .hide-scrollbar2 > .spicture > img {
+.container-infinite > .container-texts > .left-part .hide-scrollbar2 > .spicture > img {
   border: 1px solid #dfdfdf;
   width: 58px;
   height: 58px;
   margin: 20px 10px;
 }
-.container-infinite > .container-text > .right-part {
+.container-infinite > .container-texts > .right-part {
   width: 600px;
   height: 789px;
 }
-.container-infinite > .container-text > .right-part > .title-wrapper {
+.container-infinite > .container-texts > .right-part > .title-wrapper {
   margin-top: 120px;
   font-size: 28px;
   font-weight: 500;
   color: #101920;
 }
-.container-infinite > .container-text > .right-part > .margin-4x {
+.container-infinite > .container-texts > .right-part > .margin-4x {
   margin-top: 30px;
   height: 1px;
   background-color: #dfdfdf;
 }
-.container-infinite > .container-text > .right-part > .discounted-price {
+.container-infinite > .container-texts > .right-part > .discounted-price {
   font-size: 28px;
   font-weight: 500;
   margin-top: 60px;
+}
+.container-infinite > .container-texts > .right-part > .btn-add-to-cart {
+  width: 290px;
+  height: 50px;
+  background: #eb0028;
+  border: 0;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+}
+.container-infinite > .container-texts > .right-part .btn-add-to-cart::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 0;
+  height: 100%;
+  height: calc(102%);
+  transition: 0.25s;
+  background-color: #b8001f;
+  border-radius: 2px;
+  z-index: -1;
+}
+.container-infinite > .container-texts > .right-part .btn-add-to-cart:hover:before {
+  background-color: #b8001f;
+  width: 100%;
+  color: #fff;
+}
+.container-infinite > .container-texts > .right-part > .text-black {
+  display: block;
+  margin-bottom: 10px;
+  color: #101920;
+}
+.container-infinite > .container-texts > .right-part .ico-help_v2:before {
+  content: "\E029";
+}
+.container-infinite > .container-texts > .right-part > .detail-close {
+  margin-bottom: 20px;
+  color: #828282;
+}
+.container-infinite > .container-texts > .right-part .pay-way-wrap {
+  display: flex;
+}
+.container-infinite > .container-texts > .right-part .pay-way-wrap .pay-way-item {
+  margin-right: 14px;
+  line-height: 40px;
+}
+.container-infinite > .container-texts > .right-part .pay-way-wrap .pay-way-item > .icon-zfb {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../img/products-accessories-pay-sprites-6d78d1aa49.png);
+  background-position: -40px -40px;
+  width: 40px;
+  height: 40px;
+}
+.container-infinite > .container-texts > .right-part .pay-way-wrap .pay-way-item > .icon-wxzf {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../img/products-accessories-pay-sprites-6d78d1aa49.png);
+  width: 40px;
+  height: 40px;
+}
+.container-infinite > .container-texts > .right-part .pay-way-wrap .pay-way-item > .icon-yl {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../img/products-accessories-pay-sprites-6d78d1aa49.png);
+  background-position: 0 -40px;
+  width: 40px;
+  height: 40px;
+}
+.container-infinite > .container-texts > .right-part .pay-way-wrap .pay-way-item > .icon-xyk {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../img/products-accessories-pay-sprites-6d78d1aa49.png);
+  background-position: -40px 0;
+  width: 40px;
+  height: 40px;
+}
+.container-infinite > .accessories-sub-nav {
+  height: 60px;
+  background: #fff;
+}
+.container-infinite > .accessories-sub-nav > .sub-nav-wrapper {
+  width: 128px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.container-infinite > .accessories-sub-nav > .sub-nav-wrapper > li {
+  float: left;
+  line-height: 60px;
+  padding: 0 16px;
+  margin: 0 auto;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.5);
+}
+.container-infinite > .accessories-sub-nav .wrapper1:hover {
+  color: #101920;
+}
+.container-infinite .text-container {
+  background: #fff;
+  border-top: 1px solid #dfdfdf;
+}
+.container-infinite .text-container > .text-box {
+  width: 960px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+.container-infinite .text-container > .text-box > .first-subject {
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 40px;
+}
+.container-infinite .text-container > .text-box > .body-content {
+  font-size: 18px;
+  line-height: 27px;
+  color: #666;
+}
+.container-infinite > .detailmap {
+  height: 837px;
+  background: url(../img/case1.jpg);
+  background-size: 100% 100%;
 }

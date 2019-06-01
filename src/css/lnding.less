@@ -44,11 +44,11 @@
         border: 1px solid #999;
         padding-left: 8px;
       }
-      &>.show-pwd-btn{
+      & > .show-pwd-btn {
         padding: 6px 8px 0;
         font-size: 20px;
         color: #000;
-        opacity: .4;
+        opacity: 0.4;
         cursor: pointer;
         position: absolute;
         left: 300px;
@@ -56,7 +56,7 @@
       }
       .ico-hide-pwd:before {
         content: "\E007";
-    }
+      }
       & > .zhuceoneplus {
         width: 310px;
         text-align: center;
@@ -74,9 +74,26 @@
         color: #fff;
         border: 0;
         cursor: pointer;
+        position: relative;
+        z-index: 1;
       }
-      .submit-btn:hover {
-        background: #b8001f;
+      .submit-btn::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        width: 0;
+        height: 100%;
+        height: calc(100% + 2px);
+        transition: 0.25s;
+        background-color: #b8001f;
+        z-index: -1;
+      }
+      .submit-btn:hover:before {
+        background-color: #b8001f;
+        width: 100%;
+        color: #fff;
       }
       & > .lndings {
         margin-top: 30px;
@@ -134,12 +151,12 @@
           content: "\E003";
         }
         .ico-account-qq:before {
-            content: "\E002";
+          content: "\E002";
         }
-        .ico-account-weixin{
-            content: "\E003";
+        .ico-account-weixin {
+          content: "\E003";
         }
-        
+
         .ico-account-weibo:before,
         .ico-account-weixin:before {
           font-family: account;

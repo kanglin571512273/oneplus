@@ -2,7 +2,7 @@
 .container-infinite {
   background: #f6f6f6;
   //   居中部分
-  & > .container-text {
+  & > .container-texts {
     width: 1200px;
     height: 869px;
     margin: 0 auto;
@@ -37,21 +37,150 @@
       width: 600px;
       height: 789px;
       & > .title-wrapper {
-          margin-top: 120px;
+        margin-top: 120px;
         font-size: 28px;
         font-weight: 500;
         color: #101920;
       }
       & > .margin-4x {
-          margin-top: 30px;
+        margin-top: 30px;
         height: 1px;
         background-color: #dfdfdf;
       }
-      &>.discounted-price{
-          font-size: 28px;
-          font-weight: 500;
-          margin-top: 60px;
+      & > .discounted-price {
+        font-size: 28px;
+        font-weight: 500;
+        margin-top: 60px;
+      }
+      & > .btn-add-to-cart {
+        width: 290px;
+        height: 50px;
+        background: #eb0028;
+        border: 0;
+        color: #fff;
+        font-size: 17px;
+        cursor: pointer;
+        margin-top: 20px;
+        position: relative;
+        z-index: 1;
+      }
+      .btn-add-to-cart::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        width: 0;
+        height: 100%;
+        height: calc(100% + 2px);
+        transition: 0.25s;
+        background-color: #b8001f;
+        border-radius: 2px;
+        z-index: -1;
+      }
+      .btn-add-to-cart:hover:before {
+        background-color: #b8001f;
+        width: 100%;
+        color: #fff;
+      }
+      & > .text-black {
+        display: block;
+        margin-bottom: 10px;
+        color: #101920;
+      }
+      // 图标
+      .ico-help_v2:before {
+        content: "\E029";
+      }
+      & > .detail-close {
+        margin-bottom: 20px;
+        color: #828282;
+      }
+      // 支付方式
+      .pay-way-wrap {
+        display: flex;
+        .pay-way-item {
+          margin-right: 14px;
+          line-height: 40px;
+          & > .icon-zfb {
+            display: inline-block;
+            vertical-align: middle;
+            background-image: url(../img/products-accessories-pay-sprites-6d78d1aa49.png);
+            background-position: -40px -40px;
+            width: 40px;
+            height: 40px;
+          }
+          & > .icon-wxzf {
+            display: inline-block;
+            vertical-align: middle;
+            background-image: url(../img/products-accessories-pay-sprites-6d78d1aa49.png);
+            width: 40px;
+            height: 40px;
+          }
+          & > .icon-yl {
+            display: inline-block;
+            vertical-align: middle;
+            background-image: url(../img/products-accessories-pay-sprites-6d78d1aa49.png);
+            background-position: 0 -40px;
+            width: 40px;
+            height: 40px;
+          }
+          & > .icon-xyk {
+            display: inline-block;
+            vertical-align: middle;
+            background-image: url(../img/products-accessories-pay-sprites-6d78d1aa49.png);
+            background-position: -40px 0;
+            width: 40px;
+            height: 40px;
+          }
+        }
       }
     }
+  }
+  & > .accessories-sub-nav {
+    height: 60px;
+    background: #fff;
+    & > .sub-nav-wrapper {
+      width: 128px;
+      margin: 0 auto;
+      overflow: hidden;
+      & > li {
+        margin: 0 auto;
+        float: left;
+        line-height: 60px;
+        padding: 0 16px;
+        margin: 0 auto;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+    .wrapper1:hover {
+      color: #101920;
+    }
+  }
+  .text-container {
+    background: #fff;
+    border-top: 1px solid #dfdfdf;
+    & > .text-box {
+      width: 960px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 120px 0;
+      & > .first-subject {
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 40px;
+      }
+      & > .body-content {
+        font-size: 18px;
+        line-height: 27px;
+        color: #666;
+      }
+    }
+  }
+  & > .detailmap {
+    height: 837px;
+    background: url(../img/case1.jpg);
+    background-size: 100% 100%;
   }
 }

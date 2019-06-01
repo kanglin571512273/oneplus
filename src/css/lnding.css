@@ -50,7 +50,7 @@
   padding: 6px 8px 0;
   font-size: 20px;
   color: #000;
-  opacity: .4;
+  opacity: 0.4;
   cursor: pointer;
   position: absolute;
   left: 300px;
@@ -76,9 +76,26 @@
   color: #fff;
   border: 0;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
-.container-infinite .wapr .sign-up-content .submit-btn:hover {
-  background: #b8001f;
+.container-infinite .wapr .sign-up-content .submit-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 0;
+  height: 100%;
+  height: calc(102%);
+  transition: 0.25s;
+  background-color: #b8001f;
+  z-index: -1;
+}
+.container-infinite .wapr .sign-up-content .submit-btn:hover:before {
+  background-color: #b8001f;
+  width: 100%;
+  color: #fff;
 }
 .container-infinite .wapr .sign-up-content > .lndings {
   margin-top: 30px;
