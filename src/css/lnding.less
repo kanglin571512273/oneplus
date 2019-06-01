@@ -1,0 +1,155 @@
+@charset "utf-8";
+// 注册页面内容
+.container-infinite {
+  background: #f9f9f9f9;
+  .wapr {
+    width: 1200px;
+    margin: 0 auto;
+    .sign-up-content {
+      width: 350px;
+      height: 568px;
+      margin: 0 auto;
+      padding: 50px 20px 100px;
+      position: relative;
+      & > i {
+        width: 40px;
+        line-height: 40px;
+        display: inline-block;
+        position: absolute;
+        top: 116px;
+        left: 25px;
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      & > h2 {
+        height: 36px;
+        text-align: center;
+        color: #101920;
+        font-size: 24px;
+        font-weight: 400;
+        margin-right: 37px;
+      }
+      & > #username {
+        margin-top: 30px;
+        padding: 8px 50px;
+        width: 208px;
+        height: 20px;
+        border-radius: 3px;
+        border: 1px solid #999;
+      }
+      & > #password {
+        margin-top: 20px;
+        width: 300px;
+        height: 38px;
+        border-radius: 3px;
+        border: 1px solid #999;
+        padding-left: 8px;
+      }
+      &>.show-pwd-btn{
+        padding: 6px 8px 0;
+        font-size: 20px;
+        color: #000;
+        opacity: .4;
+        cursor: pointer;
+        position: absolute;
+        left: 300px;
+        top: 178px;
+      }
+      .ico-hide-pwd:before {
+        content: "\E007";
+    }
+      & > .zhuceoneplus {
+        width: 310px;
+        text-align: center;
+        font-size: 12px;
+        color: #666666;
+        margin: 50px 0 20px 0;
+        & > a {
+          color: #0099cc;
+        }
+      }
+      & > .submit-btn {
+        width: 310px;
+        height: 40px;
+        background-color: #eb0028;
+        color: #fff;
+        border: 0;
+        cursor: pointer;
+      }
+      .submit-btn:hover {
+        background: #b8001f;
+      }
+      & > .lndings {
+        margin-top: 30px;
+        display: flex;
+        text-align: center;
+        width: 310px;
+        & > .lnding {
+          margin-top: 30px;
+          text-align: center;
+          color: #0099cc;
+          display: block;
+          margin: 0 15px;
+        }
+        & > i {
+          width: 1px;
+          background: #dfdfdf;
+          height: 18px;
+          display: inline-block;
+        }
+        .lnding:hover {
+          text-decoration: underline;
+        }
+      }
+      & > .xian {
+        margin-top: 20px;
+        & > i {
+          color: #666666;
+          padding: 0 10px;
+          font-size: 12px;
+        }
+        & > div {
+          border-top: 1px solid #dfdfdf;
+          display: inline-block;
+          width: 92px;
+        }
+      }
+      & > .tubiaos {
+        display: flex;
+        margin-top: 20px;
+        width: 310px;
+        & > a {
+          display: block;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          color: #fff;
+          margin: 20px 32px;
+
+          & > span {
+            font-size: 40px;
+            line-height: 1;
+          }
+        }
+        .ico-account-weibo:before {
+          content: "\E003";
+        }
+        .ico-account-qq:before {
+            content: "\E002";
+        }
+        .ico-account-weixin{
+            content: "\E003";
+        }
+        
+        .ico-account-weibo:before,
+        .ico-account-weixin:before {
+          font-family: account;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: 400;
+          text-decoration: none;
+          text-transform: none;
+        }
+      }
+    }
+  }
+}

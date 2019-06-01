@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../font/favicon.ion.css">
+    <link rel="stylesheet" href="../css//index.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <!-- 导航栏 -->
+        <nav class="nav container-text">
+            <ul class="nav-left search-collapsed">
+                <li class="icon brand"><a href="javascript:;" class="ico-wrapper"><i class="ico ico-brand"></i></a></li>
+                <ul id="nav-pages-slide" class="nav-pages collapsed">
+                    <li class="page" style="font-weight:600"><a id="series-slide-trigger" href="javascript:;" data-parent="#store-nav" data-target="#series-slide" data-trigger="#series-slide-trigger" class="family-slide-trigger collapsed">OnePlus 7 系列<span class="series-new">New</span><i class="icon-fold"></i></a>
+                        <div class="container-infinite bg-white" style="margin-top: -2px;width: 100%">
+                            <nav id="series-slide" class="family-show collapsed">
+                                <div class="container-text">
+                                    <ul class="show-windows">
+                                        <li class="show-window"><a href="javascript:;" class="link-black text-normal item-link"><i class="ico ico-head-oneplus-7pro"></i> <span>OnePlus 7 Pro</span></a></li>
+                                        <li class="show-window"><a href="javascript:;" class="link-black text-normal item-link"><i class="ico ico-head-oneplus-7"></i> <span>OnePlus 7</span></a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </li>
+                    <li class="page" style="white-space: nowrap;"><a href="javascript:;" style="font-weight:600">OnePlus6T</a></li>
+                    <li class="page"><a id="family-slide-trigger" href="javascript:;" class="family-slide-trigger collapsed">商城<i class="icon-fold"></i></a>
+                        <!-- 商城二级导航 -->
+                        <div class="container-infinite bg-white">
+                            <nav id="family-slide2" class="family-show2 collapsed2">
+                                <div class="container-text">
+                                    <ul class="show-windows">
+                                        <li class="show-window"><a href="javascript:;" class="link-black text-normal item-link"><i class="ico  ico-head-phone"></i> <span>手机</span></a></li>
+                                        <li class="show-window"><a href="javascript:;" class="link-black text-normal item-link"><i class="ico ico-audio"></i> <span>耳机</span></a></li>
+                                        <li class="show-window"><a href="javascript:;" class="link-black text-normal item-link"><i class="ico ico-cases-protection"></i> <span>壳/膜</span></a></li>
+                                        <li class="show-window"><a href="javascript:;" class="link-black text-normal item-link"><i class="ico ico-power-cables"></i> <span>适配器/数据线</span></a></li>
+                                        <li class="show-window"><a href="javascript:;" class="link-black text-normal item-link"><i class="ico ico-bundles"></i> <span>套装</span></a></li>
+                                        <li class="show-window"><a href="javascript:;" class="link-black text-normal item-link"><i class="ico ico-gear"></i> <span>生活馆</span></a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </li>
+                    <li class="page"><a href="javascript:;">品牌</a></li>
+                    <li class="page"><a href="javascript:;">服务</a></li>
+                    <li class="page"><a href="javascript:;">论坛</a></li>
+                    <li class="page"><a href="javascript:;">线下体验</a></li>
+                </ul>
+                <ul class="nav-right">
+                    <li class="icon sign-in"><a id="show-user-info" href="javascript:;" class="user-account"><i class="ico ico-user_v2"></i></a>
+                        <!-- 登录二级导航 -->
+                        <div id="user-info" class="user-info collapsed" style="margin-top: -1px">
+                            <nav class="user-info-nav signed-in">
+                                <ul class="nav-links">
+                                    <li class="nav-link with-separator"><a href="javascript:;" class="link">订单</a></li>
+                                    <li class="nav-link with-separator"><a href="javascript:;" class="link to-dashboard">账户</a></li>
+                                    <li class="nav-link with-separator"><a href="javascript:;" class="link">推荐有礼</a></li>
+                                    <li class="nav-link nav-sign"><span class="link"><a href="javascript:;" class="link-sign">登录</a></span></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- </li> <input type="hidden" name="api-cart-gift-info-url" id="cart-gift-info-url" value="https://store.oneplus.com/xman/cart/cart-gift-info"> -->
+                        <li class="icon shop-basket"><a id="show-basket-info" href="https://store.oneplus.com/cn/cart"><i class="ico ico-bag_v2 show-number"></i></a>
+                            <nav class="basket-info-nav signed-in">
+                                <div class="cart-no-products">
+                                    <div class="text-container">
+                                        <p>您的购物车里没有商品！</p>
+                                    </div>
+                                </div>
+                                <ul class="cart-info">
+                                    <li class="cart-link"><a href="https://store.oneplus.com/cn" class="full-width one-button1 btn-red frozen">去购物</a></li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li class="icon search"><a href="" id="search-everything" class="search-everything"><i class="ico ico-search_v2"></i></a></li>
+                </ul>
+
+                </div>
+        </nav>
+    </header>
+    <!-- 主体内容 -->
+    <div class="banner-content">
+        <div id="app">
+            <vue-slideshow :data="images" :config="config"></vue-slideshow>
+        </div>
+
+    </div>
+    <div class="nav-sort">
+        <div class="nav-sort-right">
+            <a class="spantext">精选商品<i></i></a>
+            <a class="spantext">全部机型<i></i></a>
+            <a class="spantext">默认排序<i></i></a>
+        </div>
+    </div>
+    <!-- 主要商品内容区域 -->
+    <div class="big-commodity">
+        <div class="commodity">
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img src="../img/497d56793cb73cc4fdfa4f60beb8aaac_384_384.png" alt="yuner">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">一加云耳 2</span>
+                    <span class="price">¥599.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img src="../img/67f13c7fdb03a6b087a004dd838f571c_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 7 Pro 全包保护壳</span>
+                    <span class="price">最低价¥149.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img src="../img/5922779f0d06bacbe41dfea8123b22fe_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 7 Pro 个性保护壳</span>
+                    <span class="price">最低价¥99.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img src="../img/d370b62e0cf27c521cadd14220b4b308_384_384.png" alt="commodity">
+                    <span class="wenziquyu">1 款在售</span>
+                    <span class="lntroduction">一加Warp闪充30电源适配器</span>
+                    <span class="price">¥149.00</span>
+                </a>
+            </div>
+        </div>
+        <div class="commodity">
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img src="../img/e196329a2ae13dfb71bd9c0809a3e5f6_384_384.png" alt="yuner">
+                    <span class="wenziquyu">1 款在售</span>
+                    <span class="lntroduction">一加Warp闪充30车载充电器</span>
+                    <span class="price">¥199.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img src="../img/3b2ddfbc41853ce66be36bb73455e2ad_384_384.png" alt="commodity">
+                    <span class="wenziquyu">2 款在售</span>
+                    <span class="lntroduction">一加 Warp 闪充 30 Type-C 数据线</span>
+                    <span class="price">最低价¥79.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img src="../img/b1c374ef6bad2d30b3a55af10f5b5dca_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 轻生活套装</span>
+                    <span class="price">最低价¥294.95</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img class="lazy" src="../img/fe7876f45562609f197f46f839b15a3a_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 7 Pro 全家桶套装</span>
+                    <span class="price">¥421.60</span>
+                </a>
+            </div>
+        </div>
+        <div class="commodity">
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/497d56793cb73cc4fdfa4f60beb8aaac_384_384.png" alt="yuner">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">一加云耳 2</span>
+                    <span class="price">¥599.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/67f13c7fdb03a6b087a004dd838f571c_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 7 Pro 全包保护壳</span>
+                    <span class="price">最低价¥149.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/5922779f0d06bacbe41dfea8123b22fe_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 7 Pro 个性保护壳</span>
+                    <span class="price">最低价¥99.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/d370b62e0cf27c521cadd14220b4b308_384_384.png" alt="commodity">
+                    <span class="wenziquyu">1 款在售</span>
+                    <span class="lntroduction">一加Warp闪充30电源适配器</span>
+                    <span class="price">¥149.00</span>
+                </a>
+            </div>
+        </div>
+        <div class="commodity">
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/e196329a2ae13dfb71bd9c0809a3e5f6_384_384.png" alt="yuner">
+                    <span class="wenziquyu">1 款在售</span>
+                    <span class="lntroduction">一加Warp闪充30车载充电器</span>
+                    <span class="price">¥199.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/3b2ddfbc41853ce66be36bb73455e2ad_384_384.png" alt="commodity">
+                    <span class="wenziquyu">2 款在售</span>
+                    <span class="lntroduction">一加 Warp 闪充 30 Type-C 数据线</span>
+                    <span class="price">最低价¥79.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/b1c374ef6bad2d30b3a55af10f5b5dca_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 轻生活套装</span>
+                    <span class="price">最低价¥294.95</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/fe7876f45562609f197f46f839b15a3a_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 7 Pro 全家桶套装</span>
+                    <span class="price">¥421.60</span>
+                </a>
+            </div>
+        </div>
+        <div class="commodity">
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/497d56793cb73cc4fdfa4f60beb8aaac_384_384.png" alt="yuner">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">一加云耳 2</span>
+                    <span class="price">¥599.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/67f13c7fdb03a6b087a004dd838f571c_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 7 Pro 全包保护壳</span>
+                    <span class="price">最低价¥149.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/5922779f0d06bacbe41dfea8123b22fe_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 7 Pro 个性保护壳</span>
+                    <span class="price">最低价¥99.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/d370b62e0cf27c521cadd14220b4b308_384_384.png" alt="commodity">
+                    <span class="wenziquyu">1 款在售</span>
+                    <span class="lntroduction">一加Warp闪充30电源适配器</span>
+                    <span class="price">¥149.00</span>
+                </a>
+            </div>
+        </div>
+        <div class="commodity">
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/e196329a2ae13dfb71bd9c0809a3e5f6_384_384.png" alt="yuner">
+                    <span class="wenziquyu">1 款在售</span>
+                    <span class="lntroduction">一加Warp闪充30车载充电器</span>
+                    <span class="price">¥199.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/3b2ddfbc41853ce66be36bb73455e2ad_384_384.png" alt="commodity">
+                    <span class="wenziquyu">2 款在售</span>
+                    <span class="lntroduction">一加 Warp 闪充 30 Type-C 数据线</span>
+                    <span class="price">最低价¥79.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/b1c374ef6bad2d30b3a55af10f5b5dca_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 轻生活套装</span>
+                    <span class="price">最低价¥294.95</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/fe7876f45562609f197f46f839b15a3a_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 7 Pro 全家桶套装</span>
+                    <span class="price">¥421.60</span>
+                </a>
+            </div>
+        </div>
+        <div class="commodity">
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/497d56793cb73cc4fdfa4f60beb8aaac_384_384.png" alt="yuner">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">一加云耳 2</span>
+                    <span class="price">¥599.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/67f13c7fdb03a6b087a004dd838f571c_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 7 Pro 全包保护壳</span>
+                    <span class="price">最低价¥149.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/5922779f0d06bacbe41dfea8123b22fe_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 7 Pro 个性保护壳</span>
+                    <span class="price">最低价¥99.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/d370b62e0cf27c521cadd14220b4b308_384_384.png" alt="commodity">
+                    <span class="wenziquyu">1 款在售</span>
+                    <span class="lntroduction">一加Warp闪充30电源适配器</span>
+                    <span class="price">¥149.00</span>
+                </a>
+            </div>
+        </div>
+        <div class="commodity">
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/e196329a2ae13dfb71bd9c0809a3e5f6_384_384.png" alt="yuner">
+                    <span class="wenziquyu">1 款在售</span>
+                    <span class="lntroduction">一加Warp闪充30车载充电器</span>
+                    <span class="price">¥199.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/3b2ddfbc41853ce66be36bb73455e2ad_384_384.png" alt="commodity">
+                    <span class="wenziquyu">2 款在售</span>
+                    <span class="lntroduction">一加 Warp 闪充 30 Type-C 数据线</span>
+                    <span class="price">最低价¥79.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/b1c374ef6bad2d30b3a55af10f5b5dca_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 轻生活套装</span>
+                    <span class="price">最低价¥294.95</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/fe7876f45562609f197f46f839b15a3a_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 7 Pro 全家桶套装</span>
+                    <span class="price">¥421.60</span>
+                </a>
+            </div>
+        </div>
+        <div class="commodity">
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/497d56793cb73cc4fdfa4f60beb8aaac_384_384.png" alt="yuner">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">一加云耳 2</span>
+                    <span class="price">¥599.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/67f13c7fdb03a6b087a004dd838f571c_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 7 Pro 全包保护壳</span>
+                    <span class="price">最低价¥149.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/5922779f0d06bacbe41dfea8123b22fe_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 7 Pro 个性保护壳</span>
+                    <span class="price">最低价¥99.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/d370b62e0cf27c521cadd14220b4b308_384_384.png" alt="commodity">
+                    <span class="wenziquyu">1 款在售</span>
+                    <span class="lntroduction">一加Warp闪充30电源适配器</span>
+                    <span class="price">¥149.00</span>
+                </a>
+            </div>
+        </div>
+        <div class="commodity">
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/e196329a2ae13dfb71bd9c0809a3e5f6_384_384.png" alt="yuner">
+                    <span class="wenziquyu">1 款在售</span>
+                    <span class="lntroduction">一加Warp闪充30车载充电器</span>
+                    <span class="price">¥199.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/3b2ddfbc41853ce66be36bb73455e2ad_384_384.png" alt="commodity">
+                    <span class="wenziquyu">2 款在售</span>
+                    <span class="lntroduction">一加 Warp 闪充 30 Type-C 数据线</span>
+                    <span class="price">最低价¥79.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/b1c374ef6bad2d30b3a55af10f5b5dca_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 轻生活套装</span>
+                    <span class="price">最低价¥294.95</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/fe7876f45562609f197f46f839b15a3a_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 7 Pro 全家桶套装</span>
+                    <span class="price">¥421.60</span>
+                </a>
+            </div>
+        </div>
+        <div class="commodity">
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/497d56793cb73cc4fdfa4f60beb8aaac_384_384.png" alt="yuner">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">一加云耳 2</span>
+                    <span class="price">¥599.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/67f13c7fdb03a6b087a004dd838f571c_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 7 Pro 全包保护壳</span>
+                    <span class="price">最低价¥149.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/5922779f0d06bacbe41dfea8123b22fe_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 7 Pro 个性保护壳</span>
+                    <span class="price">最低价¥99.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/d370b62e0cf27c521cadd14220b4b308_384_384.png" alt="commodity">
+                    <span class="wenziquyu">1 款在售</span>
+                    <span class="lntroduction">一加Warp闪充30电源适配器</span>
+                    <span class="price">¥149.00</span>
+                </a>
+            </div>
+        </div>
+        <div class="commodity">
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/e196329a2ae13dfb71bd9c0809a3e5f6_384_384.png" alt="yuner">
+                    <span class="wenziquyu">1 款在售</span>
+                    <span class="lntroduction">一加Warp闪充30车载充电器</span>
+                    <span class="price">¥199.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/3b2ddfbc41853ce66be36bb73455e2ad_384_384.png" alt="commodity">
+                    <span class="wenziquyu">2 款在售</span>
+                    <span class="lntroduction">一加 Warp 闪充 30 Type-C 数据线</span>
+                    <span class="price">最低价¥79.00</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/b1c374ef6bad2d30b3a55af10f5b5dca_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 轻生活套装</span>
+                    <span class="price">最低价¥294.95</span>
+                </a>
+            </div>
+            <div class="com-content">
+                <a href="javascript:;">
+                    <span class="wenzi-icon">
+                        <span class="wenzi">新品</span>
+                    </span>
+                    <img data-original="../img/fe7876f45562609f197f46f839b15a3a_384_384.png" alt="commodity">
+                    <span class="wenziquyu"></span>
+                    <span class="lntroduction">OnePlus 7 Pro 全家桶套装</span>
+                    <span class="price">¥421.60</span>
+                </a>
+            </div>
+        </div>
+        <div class="our-promises">
+            <div class="container-text">
+                <div class="row text-center">
+                    <div class="locion">
+                        <i class="badge-ico ico ico-cart-reason"></i>
+                        <p class="text-black text-strong font-body-2">7天无理由退货</p>
+                    </div>
+                    <div class="locion">
+                        <i class="badge-ico ico ico-cart-security"></i>
+                        <p class="text-black text-strong font-body-2">15天退货保障</p>
+                    </div>
+                    <div class="locion">
+                        <i class="badge-ico ico ico-cart-exchange"></i>
+                        <p class="text-black text-strong font-body-2">30天换货保障</p>
+                    </div>
+                    <div class="locion">
+                        <i class="badge-ico ico ico-cart-gift"></i>
+                        <p class="text-black text-strong font-body-2">99元全场包邮</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 尾部 -->
+    <div id="page-footer">
+        <footer id="footer">
+            <div class="container-text">
+                <nav class="nav-bread">
+
+                    <div class="home"><a href="javascript:;">首页</a></div>
+                    <ol class="bread-ol">
+                        <li><span style="margin-left: 10px">商城</span></li>
+                    </ol>
+                </nav>
+                <div class="footer-nav">
+                    <dl>
+                        <dt class="nav-trigger collapsed">一加产品<i class="icon-fold"></i></dt>
+                        <dd class="nav-slide text-sm">
+                            <ul>
+                                <li>
+                                    <a href="javascript:;">OnePlus 7 Pro</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">OnePlus 7</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">OnePlus 6T</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">OnePlus 6</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">OnePlus 5T</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="nav-trigger collapsed">热门活动<i class="icon-fold"></i></dt>
+                        <dd class="nav-slide text-sm">
+                            <ul>
+                                <li>
+                                    <a href="javascript:;">推荐有礼</a>
+                                </li>
+                                <li>
+                                    <a class="trade-in-pc" href="javascript:;" target="_blank">以旧换新</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Shot on OnePlus</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">邀请码购买</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="nav-trigger collapsed">关于一加<i class="icon-fold"></i></dt>
+                        <dd class="nav-slide text-sm">
+                            <ul>
+                                <li>
+                                    <a href="javascript:;">了解一加</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">加入一加</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">H2OS</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">云服务</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">预置应用公示</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="nav-trigger collapsed">服务支持<i class="icon-fold"></i></dt>
+                        <dd class="nav-slide text-sm">
+                            <ul>
+                                <li>
+                                    <a href="javascript:;">购买帮助</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">用户手册</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">寄修服务</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">服务中心</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">联系我们</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <div class="contact-us-cn">
+                            <a class="one-tel-number service-number text-black" href="javascript:;">
+                                <i class="ico ico-call_v2"></i>400-888-1111</a>
+                            <a id="foo-service-chat-for-sobot" href="javascript:;" target="_blank" class="one-button frozen btn-ghost btn-black-online btn-lg">在线客服</a>
+                            <p class="one-tel-time service-available">周一至周日 9:00 - 22:00</p>
+                            <p class="social-media">
+                                <a href="javascript:;" class="link-gray link-wechat" target="_blank">
+                                    <i class="ico ico-wechat"><img class="wechat-qr-code" data-original="../img/f26d7e3fbe8ce7c4f3bd30d6b5be1ee5.jpg"alt="WeChat QR Code"></i>
+
+                                </a>
+                                <a href="javascript:;" class="link-gray link-weibo" target="_blank">
+                                </a>
+                            </p>
+                        </div>
+                    </dl>
+                </div>
+
+            </div>
+            <div class="container-infinite bg-warm-gray" style="background: #f9f9f9">
+                <div class="container-text">
+
+                    <div class="contact-us" style="overflow: hidden; margin: 20px 0">
+                        <div class="current-store hidden-footer-not-xs">
+                            <i class="cn"></i>中国( 简体中文/CNY )
+                        </div>
+                        <div class="link">
+                            <ul>
+                                <li><a href="javascript:;">隐私政策</a></li>
+                                <li><a href="javascript:;">用户协议</a></li>
+                                <li><a href="javascript:;">竞赛规则</a></li>
+                                <li><a href="javascript:;">知识产权政策</a></li>
+                                <li><a href="javascript:;">安全问题反馈</a></li>
+                                <li><a href="javascript:;">站点地图</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-tail-cn">
+                        <div class="row" style="overflow: hidden">
+                            <div class="weibu">
+                                <p class="copy-right"><span class="no-wrap">© 2013-2019 OnePlus. All Rights Reserved.</span> </p><br>
+                                <p class="copy-right"><span class="no-wrap">粤ICP备13080605号-4</span><span> | </span><span class="no-wrap">备案主体编号:</span> <span class="no-wrap">44201910955995</span></p><br>
+                                <a class="under-supervision" href="javascript:;" alt="粤公网安备 44030402001407号">
+                                    <img data-original="../img/badge.png" style="margin-top: -5px;">粤公网安备 44030402001407号
+                                </a>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="certificate-container">
+                                    <a class="certificate-badge" href="javascript:;" target="_blank" track-data="电子营业执照">
+                                        <img data-original="../img/51638e8fd2593c56856278feb794b506.png" alt="电子营业执照" title="电子营业执照" width="83" height="30">
+                                    </a>
+                                    <a class="certificate-badge" href="javascript:;" track-key="97fd6aef8e1b0f732c6abdfd2ffbb811" et-attached="1" track-data="可信网站" target="_blank">
+                                        <img data-original="../img/cnnic.png" width="83" height="30" alt="可信网站">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../js/jquery.lazyload.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    $(function() {
+        $("img").lazyload({
+            effect: "fadeIn"
+        });
+    });
+</script>
+<script src="../js/vue.min.js"></script>
+<script src="../js/vue-slideshow.min.js"></script>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            images: [{
+                src: "../img/0fc7232e010c75f7822ab0a3772e5076_1398_0.jpg",
+                href: "#1"
+            }, {
+                src: "../img/9c021e771609ef065a59f9410af442ba_1398_0.jpg",
+                href: "#2"
+            }, {
+                src: "../img/1876a028494fcf4152ef83226f2e03cc_1398_0.jpg",
+                href: "#3"
+            }, {
+                src: "../img/29856305bd20bf4cc323eeb1bd513dae_1398_0.jpg",
+                href: "#4"
+            }],
+            config: {
+                effect: "fade",
+                autoplay: 5000,
+
+            }
+        }
+    });
+</script>
+
+</html>

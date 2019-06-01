@@ -1,0 +1,152 @@
+@charset "utf-8";
+.container-infinite {
+  background: #f9f9f9f9;
+}
+.container-infinite .wapr {
+  width: 1200px;
+  margin: 0 auto;
+}
+.container-infinite .wapr .sign-up-content {
+  width: 350px;
+  height: 568px;
+  margin: 0 auto;
+  padding: 50px 20px 100px;
+  position: relative;
+}
+.container-infinite .wapr .sign-up-content > i {
+  width: 40px;
+  line-height: 40px;
+  display: inline-block;
+  position: absolute;
+  top: 116px;
+  left: 25px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.container-infinite .wapr .sign-up-content > h2 {
+  height: 36px;
+  text-align: center;
+  color: #101920;
+  font-size: 24px;
+  font-weight: 400;
+  margin-right: 37px;
+}
+.container-infinite .wapr .sign-up-content > #username {
+  margin-top: 30px;
+  padding: 8px 50px;
+  width: 208px;
+  height: 20px;
+  border-radius: 3px;
+  border: 1px solid #999;
+}
+.container-infinite .wapr .sign-up-content > #password {
+  margin-top: 20px;
+  width: 300px;
+  height: 38px;
+  border-radius: 3px;
+  border: 1px solid #999;
+  padding-left: 8px;
+}
+.container-infinite .wapr .sign-up-content > .show-pwd-btn {
+  padding: 6px 8px 0;
+  font-size: 20px;
+  color: #000;
+  opacity: .4;
+  cursor: pointer;
+  position: absolute;
+  left: 300px;
+  top: 178px;
+}
+.container-infinite .wapr .sign-up-content .ico-hide-pwd:before {
+  content: "\E007";
+}
+.container-infinite .wapr .sign-up-content > .zhuceoneplus {
+  width: 310px;
+  text-align: center;
+  font-size: 12px;
+  color: #666666;
+  margin: 50px 0 20px 0;
+}
+.container-infinite .wapr .sign-up-content > .zhuceoneplus > a {
+  color: #0099cc;
+}
+.container-infinite .wapr .sign-up-content > .submit-btn {
+  width: 310px;
+  height: 40px;
+  background-color: #eb0028;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+.container-infinite .wapr .sign-up-content .submit-btn:hover {
+  background: #b8001f;
+}
+.container-infinite .wapr .sign-up-content > .lndings {
+  margin-top: 30px;
+  display: flex;
+  text-align: center;
+  width: 310px;
+}
+.container-infinite .wapr .sign-up-content > .lndings > .lnding {
+  margin-top: 30px;
+  text-align: center;
+  color: #0099cc;
+  display: block;
+  margin: 0 15px;
+}
+.container-infinite .wapr .sign-up-content > .lndings > i {
+  width: 1px;
+  background: #dfdfdf;
+  height: 18px;
+  display: inline-block;
+}
+.container-infinite .wapr .sign-up-content > .lndings .lnding:hover {
+  text-decoration: underline;
+}
+.container-infinite .wapr .sign-up-content > .xian {
+  margin-top: 20px;
+}
+.container-infinite .wapr .sign-up-content > .xian > i {
+  color: #666666;
+  padding: 0 10px;
+  font-size: 12px;
+}
+.container-infinite .wapr .sign-up-content > .xian > div {
+  border-top: 1px solid #dfdfdf;
+  display: inline-block;
+  width: 92px;
+}
+.container-infinite .wapr .sign-up-content > .tubiaos {
+  display: flex;
+  margin-top: 20px;
+  width: 310px;
+}
+.container-infinite .wapr .sign-up-content > .tubiaos > a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  margin: 20px 32px;
+}
+.container-infinite .wapr .sign-up-content > .tubiaos > a > span {
+  font-size: 40px;
+  line-height: 1;
+}
+.container-infinite .wapr .sign-up-content > .tubiaos .ico-account-weibo:before {
+  content: "\E003";
+}
+.container-infinite .wapr .sign-up-content > .tubiaos .ico-account-qq:before {
+  content: "\E002";
+}
+.container-infinite .wapr .sign-up-content > .tubiaos .ico-account-weixin {
+  content: "\E003";
+}
+.container-infinite .wapr .sign-up-content > .tubiaos .ico-account-weibo:before,
+.container-infinite .wapr .sign-up-content > .tubiaos .ico-account-weixin:before {
+  font-family: account;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: none;
+}

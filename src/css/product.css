@@ -1,0 +1,54 @@
+@charset "utf-8";
+.container-infinite {
+  background: #f6f6f6;
+}
+.container-infinite > .container-text {
+  width: 1200px;
+  height: 869px;
+  margin: 0 auto;
+  padding: 20px 0 60px;
+  display: flex;
+}
+.container-infinite > .container-text > .left-part {
+  width: 600px;
+}
+.container-infinite > .container-text > .left-part .placeholder {
+  width: 600px;
+  height: 600px;
+}
+.container-infinite > .container-text > .left-part .placeholder > img {
+  width: 600px;
+  height: 600px;
+}
+.container-infinite > .container-text > .left-part .hide-scrollbar2 {
+  width: 600px;
+  height: 103px;
+  display: flex;
+  margin-left: 140px;
+}
+.container-infinite > .container-text > .left-part .hide-scrollbar2 > .spicture > img {
+  border: 1px solid #dfdfdf;
+  width: 58px;
+  height: 58px;
+  margin: 20px 10px;
+}
+.container-infinite > .container-text > .right-part {
+  width: 600px;
+  height: 789px;
+}
+.container-infinite > .container-text > .right-part > .title-wrapper {
+  margin-top: 120px;
+  font-size: 28px;
+  font-weight: 500;
+  color: #101920;
+}
+.container-infinite > .container-text > .right-part > .margin-4x {
+  margin-top: 30px;
+  height: 1px;
+  background-color: #dfdfdf;
+}
+.container-infinite > .container-text > .right-part > .discounted-price {
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 60px;
+}
