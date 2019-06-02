@@ -1,1 +1,122 @@
-@charset"utf-8";
+@charset "utf-8";
+.support-header {
+  padding: 60px 0;
+  .support-title {
+    padding-bottom: 10px;
+    font-size: 36px;
+    text-align: center;
+  }
+  .support-title2 {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+// 主要内容区域
+.support-content {
+  background: #f9f9f9;
+  padding: 60px 0 100px;
+  & > .support-contentwar {
+    width: 890px;
+    margin: 0 auto;
+    & > .list-item-list-link {
+      display: block;
+      float: left;
+      width: 26%;
+      height: 255px;
+      background-color: #fff;
+      padding: 75px 22px 0;
+      margin: 0 18px 28px 0;
+      text-align: center;
+      color: #000;
+      transition: 0.2s;
+      position: relative;
+      & > i {
+        font-size: 80px;
+      }
+      .ico-icon-contact-us::before {
+        content: "\E005";
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+        text-decoration: none;
+        text-transform: none;
+      }
+      .ico-icon-chat-with-us::before {
+        content: "\E001";
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+        text-decoration: none;
+        text-transform: none;
+      }
+      .ico-icon-contact-weixin::before {
+        content: "\E007";
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+        text-decoration: none;
+        text-transform: none;
+      }
+      .ico-icon-contact-weibo::before {
+        content: "\E006";
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+        text-decoration: none;
+        text-transform: none;
+      }
+      .ico-icon-find-a-service-center::before {
+        content: "\E009";
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+        text-decoration: none;
+        text-transform: none;
+      }
+      & > .wenzis {
+        width: 232px;
+        height: 110px;
+        & > .titleq {
+          font-size: 24px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+    .list-item-list-link:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+    .qr-code{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        bottom: 32px;
+        right: 64px;
+        display: none;
+    }
+    .list-item-list-link:nth-child(3):hover .qr-code{
+        display: block;
+      }
+  }
+  .support-contentwar::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+  //   底部文字
+  & > .germany-copy {
+    width: 890px;
+    margin: 0 auto;
+    background: #ffff;
+    & > .germany-copy1 {
+      padding: 30px 0 30px 100px;
+      & > .font-body-1 {
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 14px;
+      }
+    }
+  }
+}
