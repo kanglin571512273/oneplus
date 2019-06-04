@@ -68,10 +68,17 @@
 }
 
 // 商品内容区域
-.commodity {
-  display: flex;
-
-  & > .com-content {
+.big-commodity{
+  .big-commodity:after{
+    content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  }
+  .com-content {
+    float: left;
     box-sizing: border-box;
     width: 25%;
     height: 596px;
@@ -133,11 +140,11 @@
       }
     }
   }
+}
 
   & > .com-content:nth-child(4n) {
     border-right: none;
   }
-}
 // 商品底部的选项
 .our-promises {
     border-top: 1px solid #dfdfdf;
