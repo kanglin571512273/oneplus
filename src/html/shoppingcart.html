@@ -404,15 +404,14 @@
                 input.val(+input.val() + 1)
                 num.html(parseInt(total.html().substring(1)) * Number(input.val()))
                     // $('#totalprice').html($('#item-main2').html().substring(2) * Number(input.val()))
-
                 var sum_num = 0;
                 var sum_price = 0;
-                var tem = Number($(this).parents('.cart-item').children('#quantity').val())
+                var tem = Number($(this).parents('.cart-item').children('.item-mains').children('.item-main3').children('#quantity').val())
                 var pri = Number($(this).parents(".cart-item").find("#totalprice").html())
-                console.log($(this).parents('.cart-item').children('#quantity').val())
+                console.log($(this).parents('.cart-item').children('.item-mains').children('.item-main3').children('#quantity').val())
 
 
-                sum_num += tem;
+                sum_num = ++tem;
                 sum_price += pri;
                 $('.summary-qty').html("已选择" + sum_num + "件商品");
                 $('.font-headline-1').html('¥' + sum_price);
@@ -431,17 +430,16 @@
                     let input = $(this).parents(".cart-item").find("#quantity");
                     var tem = Number($(this).parents('.cart-items').children($('#quantity').val()))
                     var pri = Number($(this).parents(".cart-item").find("#totalprice").html())
-
+                    var i = $('#quantity').val()
+                    if (i < 0) {
+                        i = 0
+                    }
                     // console.log($(this).parents(".cart-item").find("#quantity"))
                     sum_num += tem;
                     sum_price -= pri;
                     $('.summary-qty').html("已选择" + sum_num + "件商品");
                     $('.font-headline-1').html('¥' + sum_price);
                 })
-                var i = input.val()
-                if (i = 0) {
-                    i = 0
-                }
             });
             $("body").on("click", ".item-main4", function() {
                 var remove = $(this).parents(".cart-items").find(".cart-item")
